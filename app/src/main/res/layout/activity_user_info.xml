@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+
+            <ImageView
+                android:id="@+id/userInfoIV"
+                android:layout_width="match_parent"
+                android:layout_height="394dp"
+                android:paddingBottom="8dp"
+                android:rotationX="0"
+                android:src="@drawable/default_pic" />
+
+            <LinearLayout
+                android:id="@+id/userInfoNameLayout"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userInfoIV">
+
+                <TextView
+                    android:id="@+id/userInfoName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name"
+                    android:textSize="30sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfoAgeLayout"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userInfoNameLayout">
+
+                <TextView
+                    android:id="@+id/userInfoAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Age"
+                    android:textSize="25sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfoHeightLayout"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userInfoAgeLayout">
+
+                <TextView
+                    android:id="@+id/userInfoHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Height"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/userInfoBioLayout"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userInfoHeightLayout">
+
+                <TextView
+                    android:id="@+id/userInfoBio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Bio"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:layout_margin="10dp"
+                    >
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <Button
+
+                android:id="@+id/matchUpButton"
+                style="@style/StandardButton"
+                android:layout_width="@dimen/standard_width"
+                android:layout_height="@dimen/standard_height"
+                android:layout_below="@id/userInfoBioLayout"
+                android:enabled="false"
+                android:clickable="false"
+                android:onClick="onMatchUp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="20dp"
+                android:text="Match Up">
+
+            </Button>
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
